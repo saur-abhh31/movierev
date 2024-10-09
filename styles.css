@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1f1f1f; /* Darker background for header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Cinematic gold color */
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.navbar li {
+    position: relative; /* Ensure dropdown appears correctly */
+    display: inline-block; /* Keep the main menu items inline */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+/* Hide the dropdown by default */
+.dropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    left: 0;
+    background-color: #1f1f1f; /* Dark background for dropdown */
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+/* Show dropdown when hovering over the Genres menu */
+.navbar li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+    display: block; /* Ensure dropdown items stack vertically */
+    padding: 8px 12px;
+}
+
+.dropdown a {
+    color: #ffffff; /* White text */
+}
+
+.dropdown a:hover {
+    color: #ffcc00; /* Highlight on hover */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; /* Width of search input */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #ffcc00; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+.hero {
+    position: relative;
+    height: 60vh; /* Adjust height as needed */
+    background-image: url('/images/hero-image.jpg'); /* Add your background image URL */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    color: #ffffff; /* White text color */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.hero h2 {
+    font-size: 36px; /* Size for the headline */
+    margin: 0 0 10px; /* Spacing below the headline */
+}
+
+.hero p {
+    font-size: 18px; /* Size for the subtitle */
+    margin: 0 0 20px; /* Spacing below the subtitle */
+}
+
+.cta-button {
+    background-color: #ffcc00; /* Button color */
+    color: #121212; /* Dark text color */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #e6b800; /* Darker button color on hover */
+}
+
+.featured-reviews {
+    padding: 40px 20px; /* Top and bottom padding */
+    background-color: #1f1f1f; /* Dark background for the section */
+    color: #ffffff; /* Light text color */
+    text-align: center; /* Center-align text */
+}
+
+.featured-reviews h2 {
+    font-size: 32px; /* Size for the section title */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.reviews-container {
+    display: flex; /* Use flexbox to layout review cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the review cards */
+    gap: 20px; /* Space between cards */
+}
+
+.review-card {
+    background-color: #2a2a2a; /* Card background color */
+    border-radius: 8px; /* Rounded corners for cards */
+    overflow: hidden; /* Prevent content overflow */
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s; /* Animation effect on hover */
+}
+
+.review-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.review-card img {
+    width: 100%; /* Make image fill the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.review-card h3 {
+    font-size: 20px; /* Size for the movie title */
+    margin: 15px 0 10px; /* Spacing for title */
+}
+
+.review-card p {
+    font-size: 16px; /* Size for the review description */
+    padding: 0 15px; /* Padding for text */
+}
+
+.read-more {
+    display: inline-block; /* Make it a block for better styling */
+    margin: 15px 0; /* Spacing above and below */
+    background-color: #ffcc00; /* Button color */
+    color: #121212; /* Dark text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.read-more:hover {
+    background-color: #e6b800; /* Darker button color on hover */
+}
+footer {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center align text */
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Side padding */
+}
+
+.footer-links {
+    margin-bottom: 10px; /* Space below links */
+}
+
+.footer-links a {
+    color: #ffffff; /* White text */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.footer-links a:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+.social-media {
+    margin-bottom: 10px; /* Space below social media icons */
+}
+
+.social-icon {
+    color: #ffffff; /* White text */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.social-icon:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+footer p {
+    margin-top: 10px; /* Space above copyright text */
+    font-size: 14px; /* Font size for copyright text */
+}
