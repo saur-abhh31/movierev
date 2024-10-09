@@ -102,7 +102,7 @@ body {
 .hero {
     position: relative;
     height: 60vh; /* Adjust height as needed */
-    background-image: url('/images/hero-image.jpg'); /* Add your background image URL */
+    background-image: url('images/hero-image.jpg'); /* Add your background image URL */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     display: flex;
